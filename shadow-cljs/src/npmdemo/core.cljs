@@ -1,5 +1,5 @@
 (ns npmdemo.core
-  (:require ["express"]))
+  (:require [express]))
 
 (enable-console-print!)
 (set! *warn-on-infer* true)
