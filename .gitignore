@@ -21,3 +21,4 @@ dev-out
 target
 out
 *.jar
+.nrepl-history
