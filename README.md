@@ -47,7 +47,23 @@ The new kid on the block. Meant to make configuration easier. Should feel more f
 ```
 cd shadow-cljs
 npm install
-node_modules/.bin/shadow-cljs compile app
+```
+
+### Dev mode:
+```
+# compile once
+npx shadow-cljs compile app
+# watch + reload + REPL
+npx shadow-cljs watch app
+node npmdemo.js
+
+# to actually connect to the REPL (while node process is running)
+npx shadow-cljs cljs-repl app
+```
+
+### Production build:
+```
+npx shadow-cljs release app
 node npmdemo.js
 ```
 

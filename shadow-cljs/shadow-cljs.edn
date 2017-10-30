@@ -7,6 +7,9 @@
 
  :builds
  {:app
-  {:main npmdemo.core/start-server
+  {:main npmdemo.core/main
    :target :node-script
-   :output-to "npmdemo.js"}}}
+   :output-to "npmdemo.js"
+   :devtools
+   {:after-load npmdemo.core/start!
+    :before-load npmdemo.core/stop!}}}}
