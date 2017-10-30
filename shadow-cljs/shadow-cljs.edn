@@ -1,0 +1,12 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:app
+  {:main npmdemo.core/start-server
+   :target :node-script
+   :output-to "npmdemo.js"}}}
