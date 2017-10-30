@@ -9,5 +9,4 @@
                         :output-to "npmdemo.js"
                         :output-dir "out"
                         :optimizations :advanced
-                        :closure-defines {goog.DEBUG false}
                         :pretty-print false})
