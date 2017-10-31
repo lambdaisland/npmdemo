@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "shadow-cljs": "^2.0.51"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
