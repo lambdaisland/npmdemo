@@ -69,7 +69,7 @@ node npmdemo.js
 
 ## Boot
 
-Advanced build tool. Can also offer live-reloading, a ClojureScript repl and an nREPL server.
+Advanced build tool. Can also offer live-reloading, a ClojureScript repl and an nREPL server. Unfortunately live-reloading is not yet implemented for Node. (see [adzerk-oss/boot-reload #68](https://github.com/adzerk-oss/boot-reload/issues/68))
 
 Start the dev compilation and watcher
 
