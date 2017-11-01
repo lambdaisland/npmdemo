@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "lumo-cljs": "^1.8.0-beta"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

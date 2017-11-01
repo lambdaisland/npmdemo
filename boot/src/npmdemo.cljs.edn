@@ -1,12 +1,9 @@
 {:require [npmdemo.core]
  :init-fns [npmdemo.core/start-server]
- :compiler-options {:main npmdemo.core
-                    :npm-deps {:express "4.16.2"}
+ :compiler-options {:npm-deps {:express "4.16.2"}
                     :install-deps true
                     :infer-externs true
                     :target :nodejs
-                    :output-to "npmdemo.js"
-                    :output-dir "out"
-                    :optimizations :simple
+                    :optimizations :none
                     :closure-defines {goog.DEBUG false}
                     :pretty-print false}}

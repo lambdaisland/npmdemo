@@ -69,10 +69,39 @@ node npmdemo.js
 
 ## Boot
 
-Added for completeness.
+Advanced build tool. Can also offer live-reloading, a ClojureScript repl and an nREPL server.
+
+Start the dev compilation and watcher
 
 ```
 cd boot
+boot dev
+```
+
+In another terminal
+
+```
+cd target
+node npmdemo.js
+```
+
+For a production build
+
+```
 boot build
-node target/npmdemo.js
+```
+
+## Lumo
+
+Lumo is not a compilation tool (although it has experimental support for use as
+a compiler), instead it's a ClojureScript runtime based on Node.js. You can
+think of it as Node+ClojureScript bundled into a single executable. This makes
+it behave more like other interpreted languages, i.e. you can just launch it
+with a script without having to do a separate compilation step.
+
+It will find dependencies in `node_modules`, so you can use it with `npm`/`yarn`.
+
+```
+cd lumo
+npx lumo-cljs src/npmdemo/core.cljs
 ```

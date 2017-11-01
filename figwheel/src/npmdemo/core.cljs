@@ -2,6 +2,7 @@
   (:require ["express"]))
 
 (enable-console-print!)
+
 (set! *warn-on-infer* true)
 
 (defonce server (atom nil))
@@ -15,7 +16,7 @@
 (defn start! []
   (reset! server (start-server)))
 
-(defn reset-app! []
+(defn restart! []
   (.close @server start!))
 
 (set! *main-cli-fn* start!)

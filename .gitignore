@@ -15,7 +15,6 @@ pom.xml
 pom.xml.asc
 /dev-target
 node_modules
-package.json
 dev-out
 *.js
 target
