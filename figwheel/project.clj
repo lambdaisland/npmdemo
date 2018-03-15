@@ -10,7 +10,7 @@
   :url "http://github.com/lambdaisland/npmdemo"
   :license {:name "Mozilla Public License 2.0"
             :url "https://www.mozilla.org/en-US/MPL/2.0/"}
-  :dependencies [[org.clojure/clojure "1.9.0-beta3"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.946" :scope "provided"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]]
@@ -23,7 +23,7 @@
               [{:id "dev"
                 :source-paths ["src"]
 
-                :figwheel {:on-jsload "npmdemo.core/reset-app!"}
+                :figwheel {:on-jsload "npmdemo.core/restart!"}
 
                 :compiler ~(merge
                             {:output-to "npmdemo-dev.js"
