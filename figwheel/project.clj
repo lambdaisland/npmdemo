@@ -44,10 +44,10 @@
              :server-port 3450}
 
   :profiles {:dev
-             {:dependencies [[figwheel "0.5.15-SNAPSHOT"]
-                             [figwheel-sidecar "0.5.15-SNAPSHOT"]
+             {:dependencies [[figwheel "0.5.16-SNAPSHOT"]
+                             [figwheel-sidecar "0.5.16-SNAPSHOT"]
                              [com.cemerick/piggieback "0.2.2"]]
 
-              :plugins [[lein-figwheel "0.5.15-SNAPSHOT"]]
+              :plugins [[lein-figwheel "0.5.16-SNAPSHOT"]]
 
               :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}})
