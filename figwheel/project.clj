@@ -10,7 +10,7 @@
   :url "http://github.com/lambdaisland/npmdemo"
   :license {:name "Mozilla Public License 2.0"
             :url "https://www.mozilla.org/en-US/MPL/2.0/"}
-  :dependencies [[org.clojure/clojure "1.9.0-beta3"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.946" :scope "provided"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]]
@@ -23,7 +23,7 @@
               [{:id "dev"
                 :source-paths ["src"]
 
-                :figwheel {:on-jsload "npmdemo.core/reset-app!"}
+                :figwheel {:on-jsload "npmdemo.core/restart!"}
 
                 :compiler ~(merge
                             {:output-to "npmdemo-dev.js"
@@ -44,10 +44,10 @@
              :server-port 3450}
 
   :profiles {:dev
-             {:dependencies [[figwheel "0.5.15-SNAPSHOT"]
-                             [figwheel-sidecar "0.5.15-SNAPSHOT"]
+             {:dependencies [[figwheel "0.5.16-SNAPSHOT"]
+                             [figwheel-sidecar "0.5.16-SNAPSHOT"]
                              [com.cemerick/piggieback "0.2.2"]]
 
-              :plugins [[lein-figwheel "0.5.15-SNAPSHOT"]]
+              :plugins [[lein-figwheel "0.5.16-SNAPSHOT"]]
 
               :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}})
